@@ -23,7 +23,7 @@ const translation = ({message}) => {
         break;
 
         case 'c' :
-          translatedArray.push("ᚲ")
+          translatedArray.push("ᚳ")
           break;
 
         case 'd' :
@@ -50,13 +50,71 @@ const translation = ({message}) => {
           translatedArray.push("ᛃ")
           break;
 
-          case 'a' :
-            translatedArray.push('ᚨ')
+          case 'k' :
+            translatedArray.push('ᚲ')
         break;
 
-        case 'f' :
-          translatedArray.push("ᚠ")
+        case 'l' :
+          translatedArray.push("ᛚ")
           break;
+
+        case 'm' :
+            translatedArray.push("ᛗ")
+            break;
+  
+        case 'n' :
+              translatedArray.push('ᛜ')
+          break;
+  
+        case 'o' :
+            translatedArray.push("ᛟ")
+            break;
+
+        case 'p' :
+            translatedArray.push("ᛈ")
+                break;
+      
+        case 'q' :
+             translatedArray.push('ᚦ')
+              break;
+      
+        case 'r' :
+            translatedArray.push("ᚱ")
+                break;
+                
+        case 's' :
+         translatedArray.push("ᛊ ᛋ")
+             break;
+        
+        case 't' :
+            translatedArray.push("ᛏ")
+                break;
+              
+        case 'u' :
+            translatedArray.push('ᚢ')
+                break;
+              
+        case 'v' :
+            translatedArray.push("ᛇ")
+                break; 
+        case 'w' :
+            translatedArray.push("ᚹ")
+                break;
+
+        case 'x' :
+            translatedArray.push("X")
+                 break;
+      
+        case 'y' :
+            translatedArray.push('Y')
+              break;
+      
+        case 'z' :
+            translatedArray.push("ᛉ")
+             break; 
+        case ' ' :
+            translatedArray.push("-")
+            break;                                               
     }
     console.log(translatedArray)
    }
