@@ -1,39 +1,16 @@
 import { useState } from "react";
-
-
+import Translation from "./components/Translation";
 
 function App() {
-
-  const click = () => {
-    const translatedArray = []
-   const translateFrom = Array.from (val.toLowerCase())
-   console.log(translateFrom)
-   
-   for (let i = 0; i < translateFrom.length; i++) {
-    switch (translateFrom[i]) {
-      case 'a' :
-        console.log('it worked! ')
-
-        break;
-      case 'f' :
-        console.log('this should be first') 
-        translatedArray.push("yay")
-    }
-    console.log(translatedArray)
-   }
-    return translatedArray
-  }
-
-
   
-
+  const [val, setVal] = useState('')
 
   const change = event => {
     setVal(event.target.value)
   }
   
 
-  const [val, setVal] = useState('')
+
 
 
   
@@ -41,10 +18,11 @@ function App() {
     <div className="App">
       <input type="text"
       onChange={change} />
-      <button onClick={click}> Click me</button>
+      <button onClick={change}> Clear</button>
 
       <div>
-        <h2>  </h2>
+        <Translation 
+        message = {val}/>
       </div>
     </div>
 

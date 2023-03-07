@@ -17,34 +17,46 @@ const translation = ({message}) => {
         case 'f' :
           translatedArray.push("ᚠ")
           break;
-        case 'a' :
-        translatedArray.push('ᚨ')
 
+        case 'b' :
+            translatedArray.push('ᛒ')
         break;
-      case 'f' :
-        console.log('this should be first') 
-        translatedArray.push("ᚠ")
-        case 'a' :
-        translatedArray.push('ᚨ')
 
-        break;
-      case 'f' :
-        console.log('this should be first') 
-        translatedArray.push("ᚠ")
-        case 'a' :
-        translatedArray.push('ᚨ')
+        case 'c' :
+          translatedArray.push("ᚲ")
+          break;
 
+        case 'd' :
+            translatedArray.push('ᛞ')
         break;
-      case 'f' :
-        console.log('this should be first') 
-        translatedArray.push("ᚠ")
-        case 'a' :
-        translatedArray.push('ᚨ')
 
+        case 'e' :
+          translatedArray.push("ᛖ")
+          break; 
+        
+          case 'g' :
+            translatedArray.push('ᚷ')
         break;
-      case 'f' :
-        console.log('this should be first') 
-        translatedArray.push("ᚠ")
+
+        case 'h' :
+          translatedArray.push("ᚺ ᚻ")
+          break;
+
+          case 'i' :
+            translatedArray.push('ᛁ')
+        break;
+
+        case 'j' :
+          translatedArray.push("ᛃ")
+          break;
+
+          case 'a' :
+            translatedArray.push('ᚨ')
+        break;
+
+        case 'f' :
+          translatedArray.push("ᚠ")
+          break;
     }
     console.log(translatedArray)
    }
