@@ -35,5 +35,20 @@
   height: 90px;
   border-style: none;
   width: 80%;
-  font-size: 60px;
+  font-size: 40px;
+  border-radius: 25px;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
 }
