@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Translation from "./components/Translation";
 import './App.css';
-import background from './assets/background.jpg'
 import Background from "./components/Background";
 import viking from './assets/viking-logo-fix.png'
 
@@ -9,12 +8,15 @@ import viking from './assets/viking-logo-fix.png'
 
 
 const App = () => {
-  
+
+
   const [val, setVal] = useState('')
 
   const change = event => {
     setVal(event.target.value)
   }
+
+
   
   return (
   <div>
@@ -28,10 +30,12 @@ const App = () => {
     <div className="row">
         <div className="col">
         <input className="input" type="text"
-        onChange={change} />
+        onChange={change}
+        value = {val}
+        placeholder="Type your message here"/>
         </div>
         <div className="row-1">
-          <button type="button" className="btn btn-primary" onClick={change}> Clear</button>
+          <button type="button" className="btn btn-primary" onClick={() => setVal('')}> Clear</button>
         </div>
       <div>
         {/* Translation takes the val array as a prop */}
