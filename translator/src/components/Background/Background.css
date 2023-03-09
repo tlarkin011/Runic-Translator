@@ -31,4 +31,14 @@ h1{
     }
 }
 
+.magic{
+    background-image: url('../../assets/funpng.webp');
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white ;
+
+    
+}
+
 
