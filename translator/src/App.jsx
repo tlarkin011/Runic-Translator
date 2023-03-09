@@ -3,6 +3,7 @@ import Translation from "./components/Translation";
 import './App.css';
 import background from './assets/background.jpg'
 import Background from "./components/Background";
+import viking from './assets/viking-logo-fix.png'
 
 
 
@@ -19,11 +20,14 @@ const App = () => {
   <div>
     <Background />
    <div className="container">
-    <div className="row-">
+    <div className="row">
+      <div className="col col2">
+        <img src={viking} alt="viking image" className="img-fluid"/>
+      </div>
     </div>
     <div className="row">
         <div className="col">
-        <input type="text"
+        <input className="input" type="text"
         onChange={change} />
         </div>
         <div className="row-1">
