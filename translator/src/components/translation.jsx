@@ -123,11 +123,15 @@ const translation = ({message}) => {
 
 
   return (
-    <div>
-     <h2>this is where the translation will be:</h2>
+    <div className='row'>
+        <div className='col'>
+            <h2>this is where the translation will be:</h2>
+        </div>
      <br/>
-     <div>
+     <div className='row'>
+        <div className='col'>
         <p className='display-1'>  {translatedArray} </p>
+        </div>
      </div>
     </div>
   )

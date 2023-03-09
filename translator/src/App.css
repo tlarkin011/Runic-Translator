@@ -3,16 +3,37 @@
   height: 100%;
   margin: 0;
   padding: 1em;
+  background-color: rgba(238,236,234) !important;
 }
 
 .col{
   padding-top: 10px;
   display: flex;
   justify-content: center;
+  background-color: rgba(238,236,234);
 }
 .row-1{
   display: flex;
   justify-content: center;
   justify-items: center;
   padding-top: 20px;
+}
+
+:root {
+  --bs-body-bg: rgba(238,236,234) !important;
+}
+
+.col2{
+  height: 20vh;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  padding-top: 0;
+}
+
+.input{
+  height: 90px;
+  border-style: none;
+  width: 80%;
+  font-size: 60px;
 }

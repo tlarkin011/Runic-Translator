@@ -14,7 +14,7 @@ const Background = () => {
             <h1>Rune Maker</h1>
       </div>
       <div className='magic'>
-        <img  src={overlay}  />
+        <img  src={overlay} className="img-fluid" />
       </div>
     </div>
 
