@@ -127,7 +127,7 @@ const translation = ({message}) => {
      <h2>this is where the translation will be:</h2>
      <br/>
      <div>
-        <p>  {translatedArray} </p>
+        <p className='display-1'>  {translatedArray} </p>
      </div>
     </div>
   )
