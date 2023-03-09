@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiOutlineArrowDown } from 'react-icons/ai'
 
 const translation = ({message}) => {
     
@@ -126,7 +127,7 @@ const translation = ({message}) => {
   return (
     <div className='row'>
         <div className='col'>
-            <h2>this is where the translation will be:</h2>
+            <h2>Rune Translation <AiOutlineArrowDown /> </h2>
         </div>
      <br/>
      <div className='row'>
