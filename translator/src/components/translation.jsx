@@ -3,8 +3,9 @@ import React from 'react'
 const translation = ({message}) => {
     
 
-
+    
    const translatedArray = []
+
    const translateFrom = Array.from (message.toLowerCase())
    
    for (let i = 0; i < translateFrom.length; i++) {
