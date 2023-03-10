@@ -116,7 +116,9 @@ const translation = ({message}) => {
              break; 
         case ' ' :
             translatedArray.push("-")
-            break;                                               
+            break;
+        default: 
+        alert('Please only use letters')                                                   
     }
     console.log(translatedArray)
    }

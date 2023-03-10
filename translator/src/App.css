@@ -52,3 +52,14 @@
 :-ms-input-placeholder {  
   font-style: italic; 
 }
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px;
+  border-color: aqua;
+  border-style: dotted;
+  background-color: azure;
+  border-radius: 10px;
+}

@@ -1,0 +1,44 @@
+.container-sm{
+    border-style: none;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+    
+}
+
+.row4{
+    display: flex;
+    justify-content: center;
+}
+
+.row5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+.col-8 {
+    align-self: flex-start;
+
+}
+
+.col-4 {
+    justify-content: center;
+    justify-self: center;
+    display: flex;
+}
+
+.ship {
+    height: 15vh !important;
+    width: 20vh !important;
+    border-radius: 25px;
+}
+
+@media  (min-width: 601px){
+    .col-8 {
+        font-size: 30px;
+    }
+}

@@ -3,6 +3,7 @@ import Translation from "./components/Translation";
 import './App.css';
 import Background from "./components/Background";
 import viking from './assets/viking-logo-fix.png'
+import Discovery from "./components/Discovery/Discovery";
 
 
 
@@ -32,7 +33,7 @@ const App = () => {
         <input className="input" type="text"
         onChange={change}
         value = {val}
-        placeholder="Type your message here"/>
+        placeholder="Type here"/>
         </div>
         <div className="row-1">
           <button type="button" className="btn btn-primary" onClick={() => setVal('')}> Clear</button>
@@ -42,6 +43,9 @@ const App = () => {
         <Translation 
         message = {val}/>
         </div>
+      </div>
+      <div>
+        <Discovery />
       </div>
     </div>
   </div>  
