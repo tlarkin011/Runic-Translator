@@ -22,6 +22,7 @@
 
 .col-8 {
     align-self: flex-start;
+    padding-right: 15px;
 
 }
 
@@ -29,16 +30,22 @@
     justify-content: center;
     justify-self: center;
     display: flex;
+    
 }
 
 .ship {
-    height: 15vh !important;
-    width: 20vh !important;
+    height: 20vh !important;
+    width: 100% !important;
     border-radius: 25px;
 }
 
-@media  (min-width: 601px){
+@media  (min-width: 768px){
     .col-8 {
         font-size: 30px;
     }
+    .ship{
+        height: 32vh !important;
+        width: 100% !important;
+    }
 }
+
