@@ -1,14 +1,16 @@
 import React from 'react'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 
+
+
 const translation = ({message}) => {
     
-
+    // has to be a better way to do this, maybe searching an array with an index based on searched index of "a"
     
    const translatedArray = []
 
    const translateFrom = Array.from (message.toLowerCase())
-   
+
    for (let i = 0; i < translateFrom.length; i++) {
     switch (translateFrom[i]) {
     
@@ -120,7 +122,7 @@ const translation = ({message}) => {
         default: 
         alert('Please only use letters')                                                   
     }
-    console.log(translatedArray)
+    
    }
 
     

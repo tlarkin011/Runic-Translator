@@ -10,9 +10,7 @@ const Discovery = () => {
         </div>
         <div className='row5'>
             <div className='col-8'>
-                this is why, so many words and sutff
-                 
-                 this this why
+                hailey is fluent in satanic rune
             </div>
             <div className='col-4'>
                 <img src={ship} alt="ship art" className='img-fluid ship' />
