@@ -23,6 +23,7 @@
 .col-8 {
     align-self: flex-start;
     padding-right: 15px;
+  
 
 }
 
@@ -40,12 +41,46 @@
 }
 
 @media  (min-width: 768px){
-    .col-8 {
+    .col-8{
         font-size: 30px;
     }
     .ship{
         height: 32vh !important;
         width: 100% !important;
     }
+    cite{
+        font-size: 15px;
+    }
 }
 
+cite{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    margin-left: 26px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Intersection Observer API to detect element in view */
+  .fade-in:not(.is-visible) {
+    opacity: 0;
+  }
+  
+  .fade-in.is-visible {
+    opacity: 1;
+  }

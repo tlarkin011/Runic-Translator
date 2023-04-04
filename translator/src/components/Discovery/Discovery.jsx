@@ -15,8 +15,9 @@ const Discovery = () => {
         <h1>What are Runes?</h1>
         </div>
         <div className='row5'>
-            <div className='col-8'>
+            <div className='col-8 fade-in'>
             {data}
+            <cite> <a href='https://en.wikipedia.org/wiki/Runes#:~:text=A%20rune%20is%20a%20letter,and%20for%20specialised%20purposes%20thereafter.'>-Runes-Wikipedia</a></cite>
             </div>
             <div className='col-4'>
                 <img src={ship} alt="ship art" className='img-fluid ship' />
