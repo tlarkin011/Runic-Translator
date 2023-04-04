@@ -2,6 +2,7 @@ import React from 'react'
 import "./Discovery.css"
 import ship from '../../assets/vikingart.jpg'
 import  {Articles}  from '../../Articles/Articles'
+import shelter from '../../assets/Brooks.jpg'
 
 // return article data from an article folder, easier to edit and cleaner code. 
 
@@ -11,6 +12,8 @@ import  {Articles}  from '../../Articles/Articles'
 // })
 
 const article1 = Articles.article1
+const article2 =Articles.article2
+console.log (article2)
 
 console.log(article1)
 
@@ -31,10 +34,10 @@ const Discovery = () => {
         </div>
         <div className='row5'>
             <div className='col-4'>
-                pic
+                <img src={shelter} alt="rune pic" className='img-fluid fade-in' />
             </div>
-            <div className='col-8'>
-                text
+            <div className='col-8 padding fade-in'>
+                {article2}
             </div>
 
         </div>
