@@ -34,7 +34,7 @@ const Discovery = () => {
         </div>
         <div className='row5'>
             <div className='col-4'>
-                <img src={shelter} alt="rune pic" className='img-fluid fade-in' />
+                <img src={shelter} alt="rune pic" className='img-fluid fade-in shelter' />
             </div>
             <div className='col-8 padding fade-in'>
                 {article2}
