@@ -31,6 +31,7 @@
 .col-8 {
     align-self: flex-start;
     padding-right: 15px;
+    padding-top: 15px;
   
 
 }
@@ -51,7 +52,7 @@
 
 @media  (min-width: 768px){
     .col-8{
-        font-size: 30px;
+        font-size: 2vw;
     }
     .ship{
         height: 32vh !important;
@@ -100,3 +101,11 @@ cite{
   .padding {
     padding-left: 4vw;
   }
+
+  @media(max-width: 500px) {
+        .shelter {
+            min-width: 33vw !important;
+            height: 25vh !important;
+        }
+    }
+  
