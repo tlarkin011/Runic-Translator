@@ -6,16 +6,14 @@ import shelter from '../../assets/Brooks.jpg'
 
 // return article data from an article folder, easier to edit and cleaner code. 
 
-// put articles in array for no reason, updated it t
+// put articles in array for no reason, updated it to eaiser trace back
 // const data = Articles.map(element => {
 //     return element.article1
 // })
 
 const article1 = Articles.article1
 const article2 =Articles.article2
-console.log (article2)
 
-console.log(article1)
 
 const Discovery = () => {
   return (
