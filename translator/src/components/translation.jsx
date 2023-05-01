@@ -1,11 +1,15 @@
 import React from 'react'
 import { AiOutlineArrowDown } from 'react-icons/ai'
-
+import {  BsClipboardCheckFill, BsFillClipboardFill } from 'react-icons/Bs'
+import { useState } from 'react'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
 const translation = ({message}) => {
     
     // has to be a better way to do this, maybe searching an array with an index based on searched index of "a"
+
+const [copyState, setcopyState] = useState(false);
     
    const translatedArray = []
 
@@ -124,6 +128,7 @@ const translation = ({message}) => {
     }
     
    }
+   
 
     
 
@@ -137,6 +142,18 @@ const translation = ({message}) => {
      <div className='row'>
         <div className='col'>
         <p className='display-1'>  {translatedArray} </p>
+            {translatedArray ? <div className='copy-button'>
+                <CopyToClipboard 
+                    text={translatedArray.join("")} 
+                    onCopy={() => setcopyState(true)}>                                    
+                        <div className="copy-area">          
+                            <button variant="contained">
+                             {copyState ? <BsClipboardCheckFill/> : <BsFillClipboardFill/>}
+                            </button>
+                        </div>
+                </CopyToClipboard>              
+            </div> : ""}
+            
         </div>
      </div>
     </div>
