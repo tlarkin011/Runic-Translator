@@ -74,3 +74,10 @@
     font-size: 30px;
   }
 }
+
+.copy-area button{
+  border-style: none;
+  position: relative;
+  align-content: flex-end;
+  
+}
