@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import Translation from "./Translation";
-import '../..src/App.css';
-import Background from "./Background";
+import '../App.css';
+import Background from './Background/Background'
 import viking from '../assets/viking-logo-fix.png'
-import Discovery from "./components/Discovery/Discovery";
+import Discovery from "./Discovery/Discovery";
 
-const container = () => {
+const Container = () => {
   
     const [val, setVal] = useState('')
 
@@ -52,4 +52,4 @@ const container = () => {
   
 }
 
-export default container
+export default Container
