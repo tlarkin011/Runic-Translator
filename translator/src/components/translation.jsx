@@ -10,6 +10,12 @@ const translation = ({message}) => {
     // has to be a better way to do this, maybe searching an array with an index based on searched index of "a"
 
 const [copyState, setcopyState] = useState(false);
+
+let display = "hidden"
+
+if (setcopyState == true){
+    display == "show"
+}
     
    const translatedArray = []
 
@@ -142,7 +148,7 @@ const [copyState, setcopyState] = useState(false);
      <div className='row'>
         <div className='col'>
         <p className='display-1'>  {translatedArray} </p>
-            {translatedArray ? <div className='copy-button'>
+            <div className= {`"copy-button ${display}"`}>
                 <CopyToClipboard 
                     text={translatedArray.join("")} 
                     onCopy={() => setcopyState(true)}>                                    
@@ -152,7 +158,7 @@ const [copyState, setcopyState] = useState(false);
                             </button>
                         </div>
                 </CopyToClipboard>              
-            </div> : ""}
+            </div> 
             
         </div>
      </div>
