@@ -5,17 +5,13 @@ import { useState } from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
-const translation = ({message}) => {
+
+const translation = ({message, display}) => {
     
     // has to be a better way to do this, maybe searching an array with an index based on searched index of "a"
 
 const [copyState, setcopyState] = useState(false);
 
-let display = "hidden"
-
-if (setcopyState == true){
-    display == "show"
-}
     
    const translatedArray = []
 
@@ -148,7 +144,7 @@ if (setcopyState == true){
      <div className='row'>
         <div className='col'>
         <p className='display-1'>  {translatedArray} </p>
-            <div className= {`"copy-button ${display}"`}>
+            <div className= {`copy-button  ${display}`}>
                 <CopyToClipboard 
                     text={translatedArray.join("")} 
                     onCopy={() => setcopyState(true)}>                                    

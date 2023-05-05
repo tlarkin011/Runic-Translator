@@ -9,9 +9,11 @@ import Discovery from "./Discovery/Discovery";
 const Container = () => {
   
     const [val, setVal] = useState('')
+    const [display, setdisplay] = useState('hidden')
 
     const change = event => {
       setVal(event.target.value)
+      setdisplay('show')
     }
   
   
@@ -38,7 +40,8 @@ const Container = () => {
         <div>
           {/* Translation takes the val array as a prop */}
           <Translation 
-          message = {val}/>
+          message = {val}
+          display = {display}/>
           </div>
         </div>
         <div>

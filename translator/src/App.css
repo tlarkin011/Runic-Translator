@@ -75,9 +75,15 @@
   }
 }
 
-.copy-area button{
+
+
+.copy-button{
   border-style: none;
   position: relative;
   align-content: flex-end;
   
+}
+
+.hidden{
+  display: none !important;
 }
